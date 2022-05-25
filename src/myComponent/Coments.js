@@ -12,7 +12,7 @@ export default function Coments() {
     // URL Ganti dengan alamat github atau API kamu atau URL API MU
     // Method @{get, post, put, patch, delete}
     axios
-      .get("http://localhost:8081/komentar")
+      .get("https://server-putuarykusumayudha.000webhostapp.com/komentar")
       .then((response) => {
         setdata(response.data);
         setisLoading(false);
@@ -36,7 +36,7 @@ export default function Coments() {
           </h1>
           <p>I am always excited to work on some awesome projects, message me and let's discuss over coffee.</p>
           <div className="contact-form">
-            <form action="http://localhost:8081/komentar" method="POST" accept-charset="UTF-8">
+            <form action="https://server-putuarykusumayudha.000webhostapp.com/komentar" method="POST" accept-charset="UTF-8">
               <label htmlFor="Name">
                 Your Name <span>*</span>
               </label>
